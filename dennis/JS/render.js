@@ -101,7 +101,7 @@ const urlRaiz = "https://maxicusco.net";
     }
   } */
 
- traer("electro");
+ traer("roperos");
 
 // masonryLayout(document.getElementById('articulos'), document.querySelectorAll('.articulos__container'), 2)
 
