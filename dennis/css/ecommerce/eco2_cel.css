@@ -174,7 +174,7 @@ main {
 	display: grid;
 	text-decoration: none;
 	height: auto;
-	/* border-radius: 30px; */
+	border-radius: 30px;
 	
 }
 
@@ -207,8 +207,6 @@ main .title_masbuscados{
 .promocion2 {
 	height: 46px;
 	background-color: #ffd20c;
-	margin: 0 10px;
-    border-radius: 9px;
 }
 
 /* categorias */
@@ -295,77 +293,56 @@ main .title_masbuscados{
 }
 
 #articulos {
-	/* display: grid;
+	display: grid;
 	grid-template-columns: repeat(auto-fill, 49%);
 	grid-gap: 4px;
 	width: 100%;
-	min-height: 50px;
 	margin: 0 auto;
-	border-radius: 15px; */
-	display: flex;
-	width: auto;
-	justify-content: space-between;
-	margin: 10px 0;
-	padding: 10px;
-	border-radius: 0;
-	overflow-x: scroll;
-	overscroll-behavior-x: contain;
-	scroll-snap-type: x proximity;
-	background-color: rgba(255, 255, 255, 0.5);
-	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -2px -2px 15px rgba(255, 255, 255, 0.25), -5px -5px 10px rgba(255, 255, 255, 0.25);
 	border-radius: 15px;
 }
 
 .articulos__container {
-	width: 44%;
-	display: flex;
-	border-radius: 15px;
-	flex-direction: column;
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
 	padding: 6px;
 	margin: 2px 3px 3px 5px;
-	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -2px -2px 15px rgba(255, 255, 255, 0.25), -5px -5px 10px rgba(255, 255, 255, 0.25);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5), -2px -2px 15px rgba(255, 255, 255, 0.25), -5px -5px 10px rgba(255, 255, 255, 0.25);
 	background-color: white;
 	justify-content: center;
 
 }
-
 .articulos__container .detalles {
 	padding-left: 4px;
 	display: flex;
 	text-align: center;
-	flex-direction: column;
+  flex-direction: column;
 	margin: 5px;
 }
-
-/* .articulos__container .detalles p {
+.articulos__container .detalles p {
 	font-size: 12px;
 	font-weight: 500;
 	color: #17141b;
 	font-family: "Roboto", sans-serif;
-} */
-
+}
 .articulos__container h2 {
-	font-family: 'Lato', sans-serif;
+	font-family:'Lato', sans-serif;
 	font-style: normal;
 	font-size: 1.5rem;
 	padding: 0 5px;
-	color: #4c4c4c;
 }
 
 .articulos__container h1 {
-	
-	text-transform: capitalize;
-	color: #343232;
-	text-align: center;
+  text-transform: uppercase;
+  color: #343232;
 }
 
-/* .articulos__container .calltoaction {
+.articulos__container .calltoaction {
 	height: auto;
 	display: flex;
-	min-width: auto;
+  min-width: auto;
 	justify-content: center;
 }
-
 .articulos__container .calltoaction a {
 	width: auto;
 	height: 32px;
@@ -374,34 +351,32 @@ main .title_masbuscados{
 	text-decoration: none;
 	margin-bottom: 5px;
 }
-
 .articulos__container .calltoaction a img {
 	width: 20px;
 	height: 20px;
 }
-
 .articulos__container .calltoaction a .wsp {
-	width: 96px;
+width: 96px;
 	background-color: #404dc6;
 	border-radius: 15px;
-	display: flex;
+  display: flex;
 
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-
 .articulos__container .calltoaction a .wsp p {
 	color: white;
 	font-weight: 500;
 	font-family: "Baloo Bhaina 2";
 	font-size: 1.2rem;
 	margin-right: 2px;
-} */
+}
 
 .articulos__container img {
 	display: block;
-	max-height: 225px;
+	width: 100%;
+	max-width: 350px;
 	border-radius: 20px;
 }
 

@@ -28,7 +28,7 @@ function traer(categoryProduct) {
                     
 					const price = document.createElement('h2');
 					const priceNumber = elemento.price;
-					price.textContent = `s/${priceNumber}`;
+					price.textContent = `S/${priceNumber}`;
 					detalles.append(title, price);
 					/* 
 					const callToAction = document.createElement('div');
