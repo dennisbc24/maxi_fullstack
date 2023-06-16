@@ -93,6 +93,7 @@ header {
 	display: flex;
 	justify-content: center;
 	margin: 5px 0;
+	font-size: medium;
 }
 
 .buscador {
@@ -100,6 +101,8 @@ header {
 	min-width: 351px;
 	height: 30px;
 	border: none;
+	color: #5F5F5B;
+    text-align: center;
 }
 
 .box_search img {
@@ -107,8 +110,8 @@ header {
 	border-radius: 19px;
 	height: 30px;
 	margin-left: -20px;
+	
 }
-
 /* menu desplegable */
 
 header ul {
@@ -197,11 +200,46 @@ main .title_masbuscados{
 }
 
 /* ubicacion */
+
 .ubicacion {
 	background-color: white;
-	height: 28px;
+	height: 32px;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+	padding-left: 25px;
+	font-size: small;
 }
 
+
+.ubicacion img{
+	height: 25px;
+	margin-right: 5px;
+}
+.ubicacion p{
+	color: #343232;
+    text-align: initial;
+}
+/* titulo de categoria */
+
+.title_category{
+	font-family: 'Reem Kufi	';
+	font-size: medium;
+    color: white;
+    margin-left: 22px;
+    text-transform: capitalize;
+	font-weight: 500;
+}
+/* filtro de busqueda */
+.search_filter{
+	flex-direction: row;
+    display: flex;
+}
+.search_filter_box{
+	width: 50%;
+	height: 30px;
+	background-color: white;
+}
 /* promocion 2 */
 
 .promocion2 {
