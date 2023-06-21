@@ -182,12 +182,22 @@ main {
 	
 }
 
-main h2 {
-	margin-top: 8px;
-	margin-left: 30px;
+.title_product_main{
+	font-size: xx-large;
+	text-align: center;
+    margin: 0px 12px;
 }
+
 main .title_masbuscados{
 	font-size: 20px;
+	padding-top: 8px;
+	padding-left: 30px;
+	width: 100%;
+    font-weight: normal;
+    font-family: unset;
+    color: white;
+    padding-bottom: 7px;
+    background: linear-gradient(90.07deg, #4247C7 0.42%, #3A61C5 47.66%, #2DC661 103.07%);
 }
 
 /* ubicacion */
@@ -218,6 +228,7 @@ main .title_masbuscados{
 	width: 100%;
 	background-color: white;
 	max-width: 120em;
+	margin-top: 8px;
 }
 
 .carrousel .photos_box {
@@ -227,6 +238,13 @@ main .title_masbuscados{
 	align-items: center;
 	transition: all .5s ease;
 	transform: translateX(0%);
+	
+}
+
+.photos_box img{
+	margin: 0.5%;
+	border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1.2), -2px -2px 15px rgba(255, 255, 255, 0.25), -5px -5px 10px rgba(255, 255, 255, 0.25);
 }
 
 .box_points {
@@ -250,6 +268,41 @@ main .title_masbuscados{
 	width: 4em;
 	height: 4em;
 	background-color: #141418;
+}
+
+/* informacion del checkout */
+.information{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+    justify-content:space-around;
+	align-content:center;
+    
+}
+.price_1{
+	font-size: 30px;
+    color: #515050;
+}
+.price_2{
+	margin-top: -4px;
+	font-size: 17px;
+	color: #9aa0ab;
+    text-decoration: line-through;
+}
+
+.information .delivery p{
+	padding: 3px 13px;
+	margin-top: 12px;
+    border-radius: 5px;
+    background-color: #757272;
+    color: white;
+    font-family: 'system-ui';
+}
+
+.caracteristicas{
+	margin: 7px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1.2), -2px -2px 15px rgba(255, 255, 255, 0.25), -5px -5px 10px rgba(255, 255, 255, 0.25);
 }
 
 #articulos {
