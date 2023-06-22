@@ -290,6 +290,32 @@ main .title_masbuscados{
     text-decoration: line-through;
 }
 
+.boton_comprar{
+	margin-bottom: 3px;
+	width: 240px;
+    color: white;
+    justify-self: center;
+    background: linear-gradient(90.07deg, #4247C7 0.42%, #3A61C5 47.66%, #2DC661 103.07%);
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+}
+.box_agregar{
+	padding: 1px;
+	width: 240px;
+	color: white;
+    justify-self: center;
+    background:linear-gradient(90.07deg, #4247C7 0.42%, #3A61C5 47.66%, #2DC661 103.07%);
+    border-radius: 6px;
+    
+}
+.boton_agregar{
+	padding: 5px;
+	width: 238px;
+    border: none;
+	border-radius: 6px;
+	color: #4247C7;
+}
 .information .delivery p{
 	padding: 3px 13px;
 	margin-top: 12px;
@@ -300,19 +326,45 @@ main .title_masbuscados{
 }
 
 .caracteristicas{
+	padding: 7px;
+	display: flex;
+	flex-direction: column;
 	margin: 7px;
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 1.2), -2px -2px 15px rgba(255, 255, 255, 0.25), -5px -5px 10px rgba(255, 255, 255, 0.25);
 }
+.title_box{
+	margin: 0 0 5px 10px;
+	font-size: 20px;
+    font-weight: 400;
+    font-family: system-ui;
+
+}
+.row_caract{
+	font-size: 15px;
+	display: flex;
+	flex-direction: row;
+	margin-left: 20px;
+}
+.title_caract{
+	color: #000000;
+}
+.title_caract2{
+	color: #6f6b6b;
+}
+.envio{
+	margin: 7px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1.2), -2px -2px 15px rgba(255, 255, 255, 0.25), -5px -5px 10px rgba(255, 255, 255, 0.25);
+    padding: 7px;
+}
+.envio_box{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
 
 #articulos {
-	/* display: grid;
-	grid-template-columns: repeat(auto-fill, 49%);
-	grid-gap: 4px;
-	width: 100%;
-	min-height: 50px;
-	margin: 0 auto;
-	border-radius: 15px; */
 	display: flex;
 	width: auto;
 	justify-content: space-between;
