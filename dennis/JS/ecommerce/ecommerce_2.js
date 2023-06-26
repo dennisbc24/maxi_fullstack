@@ -103,7 +103,7 @@ function traer(categoryProduct) {
   }
 } */
 
-traer("roperos");
+traer("electro");
 
 // masonryLayout(document.getElementById('articulos'), document.querySelectorAll('.articulos__container'), 2)
 

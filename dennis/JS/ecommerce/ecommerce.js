@@ -12,11 +12,11 @@ function traer(categoryProduct) {
 		.then((respuesta) => respuesta.json())
 		.then((responseJson) => {
 			const todosLosElementos = [];
-			responseJson.forEach((elemento) => {
-				if (elemento.category == categoryProduct) {
+			
+				for (let index = 0; index < 12; index++) {
+					const elemento = responseJson[Math.floor(Math.random() * responseJson.length)];
 					const container = document.createElement('article');
-					//container.id = elemento.id;
-
+					
 					const imagen = document.createElement('img');
 					imagen.src = elemento.imageUrl;
 
@@ -30,30 +30,8 @@ function traer(categoryProduct) {
 					const priceNumber = elemento.price;
 					price.textContent = `S/${priceNumber}`;
 					detalles.append(title, price);
-					/* 
-					const callToAction = document.createElement('div');
-					callToAction.className = 'calltoaction';
-					const link = document.createElement('a');
-
-					const api = `https://api.whatsapp.com/send/?phone=${telefonoParaContacto}&text=`
-					const texto = `Hola estoy interesado en el producto: ${tituloProduct}. Necesito más información.`;
-					const espacio = " ";
-					const newArray = texto.split(espacio);
-					newString = newArray.join("%20");
-					const final = `${api}${newString}`;
-
-					link.href = final;
-					const wsp = document.createElement('div');
-					wsp.className = 'wsp';
-					const contact = document.createElement('p');
-					contact.textContent = 'PEDIR';
-					const icon = document.createElement('img');
-					icon.src = '/icons/whatsapp3.png';
-					icon.alt = 'icono de Whatsapp'
-					wsp.append(contact);
-					link.append(wsp);
-					callToAction.append(link); */
-					container.append(imagen, detalles, /* callToAction */);
+					
+					container.append(imagen, detalles);
 					container.className = 'articulos__container';
 					container.classList.add = 'column-1';
 					todosLosElementos.push(container);
@@ -61,13 +39,17 @@ function traer(categoryProduct) {
 					const cajaGrande = document.getElementById('articulos');
 
 					cajaGrande.append(...todosLosElementos);
+					
 				}
-				//masonryLayout(document.getElementById('articulos'), document.querySelectorAll('.articulos__container'), 2)
-			});
+					
+				
+				
+			
 		})
 }
-traer('termos');
+traer('electro');
 
+/* carrusel */
 const box_photo = document.querySelector('.photos_box')
 const points = document.querySelectorAll('.point')
 const photos = document.querySelectorAll('.photo')
